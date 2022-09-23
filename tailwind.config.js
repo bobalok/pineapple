@@ -5,32 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "default-logo":
+          "url('https://raw.githubusercontent.com/technocalorie/brainfreeze/main/public/neutechLogoColorWithText.svg')",
+      },
+    },
   },
   daisyui: {
-    themes: [
-      {
-        mytheme: {
-          primary: "#d82b17",
-
-          secondary: "#9f8fea",
-
-          accent: "#aaffb7",
-
-          neutral: "#342234",
-
-          "base-100": "#FFFFFF",
-
-          info: "#65A9CD",
-
-          success: "#61E5A5",
-
-          warning: "#A46F04",
-
-          error: "#F41528",
-        },
-      },
-    ],
+    themes: ["emerald"],
   },
   plugins: [require("daisyui")],
 };
