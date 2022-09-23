@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navi = () => {
   return (
     <div className='px-8'>
@@ -25,11 +27,11 @@ const Navi = () => {
               className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
             >
               <li>
-                <a>Item 1</a>
+                <a>Home</a>
               </li>
               <li tabIndex={0}>
                 <a className='justify-between'>
-                  Parent
+                  Services
                   <svg
                     className='fill-current'
                     xmlns='http://www.w3.org/2000/svg'
@@ -42,28 +44,39 @@ const Navi = () => {
                 </a>
                 <ul className='p-2'>
                   <li>
-                    <a>Submenu 1</a>
+                    <a>Digital Strategy Services</a>
                   </li>
                   <li>
-                    <a>Submenu 2</a>
+                    <a>Web Design Services</a>
+                  </li>
+                  <li>
+                    <a>WordPress Development</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Our Work</a>
+              </li>
+              <li>
+                <a>Industries</a>
+              </li>
+              <li>
+                <a>Team</a>
               </li>
             </ul>
           </div>
-          <a className='btn btn-ghost normal-case text-xl'>daisyUI</a>
+          <Link href={"/"}>
+            <a className='bg-default-logo bg-no-repeat h-12 md:h-20 w-48'></a>
+          </Link>
         </div>
         <div className='navbar-center hidden lg:flex'>
           <ul className='menu menu-horizontal p-0'>
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
             </li>
             <li tabIndex={0}>
               <a>
-                Parent
+                Services
                 <svg
                   className='fill-current'
                   xmlns='http://www.w3.org/2000/svg'
@@ -76,20 +89,29 @@ const Navi = () => {
               </a>
               <ul className='p-2'>
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Digital Strategy Services</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Web Design Services</a>
+                </li>
+                <li>
+                  <a>WordPress Development</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Our Work</a>
+            </li>
+            <li>
+              <a>Industries</a>
+            </li>
+            <li>
+              <a>Team</a>
             </li>
           </ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn'>Get started</a>
+          <a className='btn'>Request a Quote</a>
         </div>
       </div>
     </div>
