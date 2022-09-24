@@ -87,7 +87,7 @@ const Navi = () => {
                   <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
                 </svg>
               </a>
-              <ul className='p-2'>
+              <ul className='p-2 glass'>
                 <li>
                   <a>Digital Strategy Services</a>
                 </li>
@@ -111,7 +111,7 @@ const Navi = () => {
           </ul>
         </div>
         <div className='navbar-end'>
-          <a className='btn'>Request a Quote</a>
+          <a className='hidden lg:btn '>Request a Quote</a>
         </div>
       </div>
     </div>
