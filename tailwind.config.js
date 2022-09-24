@@ -13,7 +13,29 @@ module.exports = {
     },
   },
   daisyui: {
-    themes: ["cyberpunk"],
+    themes: [
+      {
+        mytheme: {
+          primary: "#631c96",
+
+          secondary: "#97f4a4",
+
+          accent: "#ce1c43",
+
+          neutral: "#182026",
+
+          "base-100": "#E3E5E8",
+
+          info: "#73B8D9",
+
+          success: "#16643C",
+
+          warning: "#FAD029",
+
+          error: "#E0486E",
+        },
+      },
+    ],
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
