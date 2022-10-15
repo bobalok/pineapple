@@ -1,13 +1,16 @@
-import React from "react";
+import Img from "next/image";
 
 export default function Hero() {
   return (
     <>
       <div className='hero min-h-screen bg-base-200'>
         <div className='hero-content flex-col lg:flex-row-reverse'>
-          <img
+          <Img
             src='https://placeimg.com/260/400/arch'
             className='max-w-sm rounded-lg shadow-2xl'
+            height='400'
+            width='260'
+            // placeholder='blur'
           />
           <div className='prose'>
             <h1 className='text-5xl font-bold'>Box Office News!</h1>

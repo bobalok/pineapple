@@ -34,7 +34,7 @@ export default function Layout({ children }) {
         <meta name='theme-color' content='#ffffff' />
       </Head>
       <Navi />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   );
